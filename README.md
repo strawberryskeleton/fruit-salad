@@ -14,3 +14,4 @@ website:
 - Make your own salad: try the font
 - order your salad: download font
 - guide/fruit mappings
+- some fruit themed game? (like catch game in scratch/etc.)
