@@ -108,7 +108,7 @@ nav {
 .menu-item {
     color: white;
     text-decoration: none;
-    font-size: calc(1.5rem + 2vw);
+    font-size: 4rem;
     opacity: 0;
     transform: translate(-20em);
     display: block;
@@ -117,6 +117,33 @@ nav {
 
 .menu li + li {
     margin-top: 1em;
+}
+
+.menu-item span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.menu-item span .letter-out {
+    display: inline-flex;
+
+}
+
+.menu-item:hover span .letter-out {
+    transform: translateY(-100%);
+}
+
+.menu-item span .letter-in {
+    position: absolute;
+    left: 0;
+    color: crimson;
+    transform: translateY(100%);
+}
+
+.menu-item:hover span .letter-in {
+    transform: translateY(0);
 }
 
 .reveal-items .menu-item {
