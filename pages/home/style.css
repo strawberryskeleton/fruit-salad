@@ -53,10 +53,60 @@ header {
 
 .logo {
     position: absolute;
-    top: 0.5rem;
+    top: 4rem;
     left: 50%;
     transform: translateX(-50%);
-    height: 12rem;
+    height: 10rem;
+    /* width: 60rem; */
+    display: flex;
+    gap: 3rem;
+    /* background-color: cornflowerblue; */
+}
+
+.letters {
+    display: inline-block;
+}
+
+.logo img.big{
+    height: 6rem;
+    animation: float 5s infinite linear;
+}
+
+.logo img.small {
+    height: 4.5rem;
+    animation: float 5s infinite linear;
+}
+
+/* .letter {
+    animation: float 1s infinite linear;
+} */
+
+/* .logo img.small.i {
+    height: 5.5rem;
+} */
+
+/* .logo .word2 {
+    position: relative;
+    left: 50%;
+    top: -20%;
+} */
+
+.word1:nth-child(1), .word2:nth-child(2) { animation-delay: 0s; }
+.word1:nth-child(2), .word2:nth-child(1) { animation-delay: 4s; }
+.word1:nth-child(3), .word2:nth-child(4) { animation-delay: 0s; }
+.word1:nth-child(4), .word2:nth-child(3) { animation-delay: 4s; }
+.word1:nth-child(5), .word2:nth-child(5) { animation-delay: 0s; }
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .hamburger {
@@ -350,4 +400,61 @@ main {
 
 .circle-carousel .prev {
   left: -20%;
+}
+
+
+/* .floating-items {
+    position: ;
+} */
+
+.salt-shaker {
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    z-index: 50;
+    height: 9rem;
+    rotate: 10deg;
+    animation: float-items 4s infinite linear;
+}
+
+.spoon {
+    position: absolute;
+    top: 13rem;
+    left: 13rem;
+    z-index: 50;
+    height: 9rem;
+    rotate: 15deg;
+    animation: float-items 4s infinite linear;
+}
+
+.chilli-shaker {
+    position: absolute;
+    top: 5rem;
+    right: 8rem;
+    z-index: 50;
+    height: 9rem;
+    rotate: -15deg;
+    animation: float-items 4s infinite linear;
+}
+
+.knife {
+    position: absolute;
+    top: 13rem;
+    right: 14rem;
+    z-index: 50;
+    height: 8rem;
+    rotate: 5deg;
+    animation: float-items 4s infinite linear;
+}
+
+@keyframes float-items {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translate(0);
+    }
 }
