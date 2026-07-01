@@ -337,6 +337,34 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.dot::after {
+  /* Dynamically pull the text from the data-tooltip attribute */
+  content: attr(data-tooltip); 
+  
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+
+  background-color: var(--dark-brown);
+  color: var(--white);
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.dot:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .circle-carousel .fruits .dot:hover {
