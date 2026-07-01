@@ -1,11 +1,353 @@
-/* @font-face {
-    font-family: "FruitSalad";
-    src: url("./build/FruitSalad.ttf");
-} */
+:root {
+    --light-brown: #fcddb6;
+    --dark-brown: #3b0404;
+    --white: #ccc;
+    --translucent-black: #33333358;
+}
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--light-brown);
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  will-change: transform;
+} */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 2.5rem;
+    background: transparent;
+    position: static;
+    /* b: 0; */
+    /* right: 0; */
+    z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 12rem;
+}
+
+.hamburger {
+    --hm-width: 3em; 
+    --hm-height: 0.4em;
+    --spacing: calc(var(--hm-width) / 4);
+
+    width: var(--hm-width);
+    height: var(--hm-height);
+    background-color: var(--dark-brown);
+    position: relative;
+    transition: transform 0.8s ease-in-out;
+
+    z-index: 100;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: "";
+    width: 50%; 
+    height: inherit;
+    background-color: var(--dark-brown);
+    display: block;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    transition: transform 0.8s ease-in-out;
+    z-index: 100;
+}
+
+.hamburger::after {
+    top: calc(-1 * var(--spacing)); 
+}
+.hamburger::before {
+    top: var(--spacing); 
+    left: 50%;
+}
+
+.close.hamburger::before,
+.close.hamburger::after {
+    left: 50%;
+    transform: translate(-50%) rotate(-450deg);
+    background-color: var(--white);
+}
+
+.close.hamburger {
+    transform: rotate(45deg);
+    background-color: var(--white);
+}
+
+nav {
+    position: fixed;
+    background-color: var(--dark-brown);
+    text-transform: uppercase;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: left center;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in;
+    z-index: 90;
+}
+
+.reveal-nav {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu-item {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 4rem;
+    opacity: 0;
+    transform: translate(-20em);
+    display: block;
+    transition: transform 0.8s ease-in-out, opacity 0.3s ease-in;
+}
+
+.menu li + li {
+    margin-top: 1em;
+}
+
+.menu-item span {
+    display: inline-block;
+    position: relative;
+    transition: 0.25s ease;
+    overflow: hidden;
+}
+
+.menu-item span .letter-out {
+    display: inline-flex;
+
+}
+
+.menu-item:hover span .letter-out {
+    transform: translateY(-100%);
+}
+
+.menu-item span .letter-in {
+    position: absolute;
+    left: 0;
+    color: var(--light-brown);
+    transform: translateY(100%);
+}
+
+.menu-item:hover span .letter-in {
+    transform: translateY(0);
+}
+
+.reveal-items .menu-item {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.reveal-items li:nth-child(1) .menu-item{
+    transition-delay: 0.1s;
+}
+.reveal-items li:nth-child(2) .menu-item{
+    transition-delay: 0.2s;
+}
+
+.reveal-items li:nth-child(3) .menu-item{
+    transition-delay: 0.3s;
+}
+
+.reveal-items li:nth-child(4) .menu-item{
+    transition-delay: 0.4s;
+}
+
+.reveal-items li:nth-child(5) .menu-item{
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+
+
+/* ============================
+==========MAIN================
+================================= */
+main {
+    width: 100%;
+    /* background-color: blueviolet; */
+    position: relative;
+    flex-grow: 1;
+    /* min-height: 100vh; */
+    /* overflow: hidden; */
+}
+
+.shelf {
+    width: 100%;
+    background-color: var(--dark-brown);
+    background: url('../../assets/shelf_edit.png');
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+    position: absolute;
+    bottom: 22rem;
+    z-index: 1;
+}
+
+.bowl {
+    height: 12.5rem;
+    /* width: 40rem; */
+    position: absolute;
+    bottom: 26rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+
+.slider {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.circle-carousel {
+  position: relative;
+  top: 8rem;
+  padding-top: 100%;
+  /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.circle-carousel .fruits {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  /* border: 3px solid white; */
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  pointer-events: none;
+  user-select: none;
+}
+
+.circle-carousel .fruits .dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  pointer-events: auto;
+  transition: 0.3s;
+  /* background: var(--translucent-black); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-carousel .fruits .dot:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  cursor: pointer;
+  /* background: white; */
+  color: black;
+}
+
+.circle-carousel .fruits .dot img {
+    height: 100%;
+}
+
+.circle-carousel .fruits .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.circle-carousel .fruits .item.active:hover .dot {
+  /* background: white; */
+  /* color: black; */
+  width: 8rem;
+  height: 8rem;
+}
+
+.circle-carousel .next,
+.circle-carousel .prev {
+  position: absolute;
+  bottom: 75%;
+  z-index: 1;
+  width: 6rem;
+  height: 6rem;
+  color: var(--white);
+  font-size: 36px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  transition: 0.3s;
+  user-select: none;
+  /* background-color:cornflowerblue; */
+  background-image: radial-gradient(circle, var(--dark-brown) 50%, transparent 50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-carousel .next:hover,
+.circle-carousel .prev:hover {
+  cursor: pointer;
+  /* color: black; */
+}
+
+.circle-carousel .next {
+  right: -20%;
+}
+
+.circle-carousel .prev {
+  left: -20%;
+}

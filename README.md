@@ -15,3 +15,6 @@ website:
 - order your salad: download font
 - guide/fruit mappings
 - some fruit themed game? (like catch game in scratch/etc.)
+
+https://cdn.creativefabrica.com/2021/06/11/Wooden-Shelf-Empty-Bookshelf-Space-Graphics-13255082-1.jpg
+https://codepen.io/nicoleat3ve/pen/OJyBoMp
