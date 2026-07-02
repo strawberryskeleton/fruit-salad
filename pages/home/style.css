@@ -443,6 +443,7 @@ main {
     height: 9rem;
     rotate: 10deg;
     animation: float-items 4s infinite linear;
+    animation-delay: 2s;
 }
 
 .spoon {
@@ -453,6 +454,7 @@ main {
     height: 9rem;
     rotate: 15deg;
     animation: float-items 4s infinite linear;
+    animation-delay: 0;
 }
 
 .chilli-shaker {
@@ -463,6 +465,7 @@ main {
     height: 9rem;
     rotate: -15deg;
     animation: float-items 4s infinite linear;
+    animation-delay: 5s;
 }
 
 .knife {
@@ -473,6 +476,7 @@ main {
     height: 8rem;
     rotate: 5deg;
     animation: float-items 4s infinite linear;
+    animation-delay: 2s;
 }
 
 @keyframes float-items {
