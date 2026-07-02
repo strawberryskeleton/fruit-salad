@@ -262,12 +262,29 @@ main {
     position: relative;
     flex-grow: 1;
     height: fit-content;
-    padding-top: 8rem;
+    padding-top: 9rem;
     /* min-height: 100vh; */
     /* overflow: hidden; */
 }
 
+.title-div {
+    /* background-color: cornflowerblue; */
+    text-align: center;
+}
 
+.title {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: var(--fruit-font);
+}
+
+.title-explain {
+    font-size: 24px;
+    text-transform: lowercase;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--dark-brown);
+}
 
 
 
