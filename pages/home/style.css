@@ -112,7 +112,10 @@ header {
     width: var(--hm-width);
     height: var(--hm-height);
     background-color: var(--dark-brown);
-    position: relative;
+    /* position: relative; */
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
     transition: transform 0.8s ease-in-out;
 
     z-index: 100;
@@ -271,7 +274,7 @@ main {
     background-size: cover;
     height: 10rem;
     position: absolute;
-    bottom: 22rem;
+    bottom: 20rem;
     z-index: 1;
 }
 

@@ -11,7 +11,7 @@
 body {
     width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: var(--light-brown);
     font-family: var(--text-font);
     display: flex;
@@ -40,7 +40,7 @@ header {
     width: 100%;
     padding: 2rem;
     background: transparent;
-    position: static;
+    /* position: fixed; */
     /* b: 0; */
     /* right: 0; */
     z-index: 100;
@@ -112,7 +112,9 @@ header {
     width: var(--hm-width);
     height: var(--hm-height);
     background-color: var(--dark-brown);
-    position: relative;
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
     transition: transform 0.8s ease-in-out;
 
     z-index: 100;
@@ -259,6 +261,93 @@ main {
     /* background-color: blueviolet; */
     position: relative;
     flex-grow: 1;
+    height: fit-content;
+    padding-top: 8rem;
     /* min-height: 100vh; */
     /* overflow: hidden; */
+}
+
+.container {
+    width: 75%;
+    /* height: 50rem; */
+    margin: 0 auto;
+    /* z-index: 10; */
+    background-color: var(--translucent-black);
+    /* position: relative;
+    top: 8rem; */
+    margin-bottom: 2rem;
+    border-radius: 16px;
+}
+
+.fruits-table {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 3rem 5rem;
+    font-size: 24px;
+    color: var(--dark-brown);
+}
+
+.fruits-row {
+    display: grid;
+    grid-template-columns: 5rem 1fr 6rem;
+    align-items: center;
+    gap: 8rem;
+    margin: 0.5rem;
+    transition: transform 0.5s ease;
+    /* border-bottom: 1px solid var(--dark-brown); */
+}
+
+.fruits-row:not(:first-child):hover {
+    /* color: blueviolet; */
+    transform: scale(1.025);
+}
+
+.fruits-row.heading {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    font-family: var(--heading-font);
+}
+
+.fruit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fruit-font);
+    font-size: 24px;
+}
+
+.fruit-letter {
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    background-color: var(--dark-brown);
+    border: none;
+}
+
+
+
+footer {
+    width: 100%;
+    /* position: fixed;
+    bottom: 0; */
+    background-color: var(--dark-brown);
+    color: var(--white);
+    padding: 0.2rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    transition: color 0.1s ease-in;
+}
+
+footer a:hover {
+    color: var(--light-brown);
 }
