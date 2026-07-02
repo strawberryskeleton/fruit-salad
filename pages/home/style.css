@@ -1,9 +1,4 @@
-:root {
-    --light-brown: #fcddb6;
-    --dark-brown: #3b0404;
-    --white: #ccc;
-    --translucent-black: #33333358;
-}
+@import url(../theme.css);
 
 *,
 *::before,
@@ -18,7 +13,7 @@ body {
     min-height: 100vh;
     overflow: hidden;
     background-color: var(--light-brown);
-    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-family: var(--text-font);
     display: flex;
     flex-direction: column;
 }
@@ -188,7 +183,7 @@ nav {
 .menu-item {
     color: var(--white);
     text-decoration: none;
-    font-size: 4rem;
+    font-size: 3.5rem;
     opacity: 0;
     transform: translate(-20em);
     display: block;
@@ -196,7 +191,7 @@ nav {
 }
 
 .menu li + li {
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .menu-item span {
