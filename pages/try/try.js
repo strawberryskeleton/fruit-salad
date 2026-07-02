@@ -34,3 +34,13 @@ menuItems.forEach(link => {
     })
 
 })
+
+
+const fruitInput = document.getElementById('fruit-input')
+const engOutput = document.getElementById('eng-output')
+
+fruitInput.addEventListener('input', (ev) => {
+    const currentText = ev.target.value
+
+    engOutput.textContent = currentText
+})
