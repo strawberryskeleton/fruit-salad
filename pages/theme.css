@@ -5,5 +5,10 @@
     --translucent-black: #3b040442;
     --text-font: 'Segoe UI', Verdana, sans-serif;
     --heading-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --fruit-font: 'fruit-salad', sans-serif;
+    --fruit-font: 'Fruit Salad', sans-serif;
+}
+
+@font-face {
+    font-family: "Fruit Salad";
+    src: url("../font/build/fruit-salad.ttf") format("truetype");
 }

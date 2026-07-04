@@ -1,0 +1,34 @@
+family = "Fruit Salad"
+output_file = "fruit-salad.ttf"
+color_format = "glyf_colr_1"
+upem = 1024
+width = 1275
+ascender = 950
+descender = -250
+linegap = 0
+transform = "translate(0, 0)"
+version_major = 1
+version_minor = 0
+reuse_tolerance = 0.1
+ignore_reuse_error = true
+keep_glyph_names = false
+clip_to_viewbox = true
+clipbox_quantization = 32
+pretty_print = false
+fea_file = "features.fea"
+glyphmap_generator = "nanoemoji.write_glyphmap"
+bitmap_resolutions = [ 128,]
+use_zopflipng = true
+use_pngquant = true
+pngquant_flags = "--speed 1 --skip-if-larger --quality 85-95"
+
+[axis.wght]
+name = "Weight"
+default = 400
+
+[master.regular]
+style_name = "Regular"
+srcs = [ "picosvg\\clipped\\u0021.svg", "picosvg\\clipped\\u0022.svg", "picosvg\\clipped\\u0023.svg", "picosvg\\clipped\\u0024.svg", "picosvg\\clipped\\u0026.svg", "picosvg\\clipped\\u0027.svg", "picosvg\\clipped\\u0028.svg", "picosvg\\clipped\\u0029.svg", "picosvg\\clipped\\u002a.svg", "picosvg\\clipped\\u002b.svg", "picosvg\\clipped\\u002c.svg", "picosvg\\clipped\\u002d.svg", "picosvg\\clipped\\u002e.svg", "picosvg\\clipped\\u0030.svg", "picosvg\\clipped\\u0031.svg", "picosvg\\clipped\\u0032.svg", "picosvg\\clipped\\u0033.svg", "picosvg\\clipped\\u0034.svg", "picosvg\\clipped\\u0035.svg", "picosvg\\clipped\\u0036.svg", "picosvg\\clipped\\u0037.svg", "picosvg\\clipped\\u0038.svg", "picosvg\\clipped\\u0039.svg", "picosvg\\clipped\\u003a.svg", "picosvg\\clipped\\u003b.svg", "picosvg\\clipped\\u003c.svg", "picosvg\\clipped\\u003d.svg", "picosvg\\clipped\\u003e.svg", "picosvg\\clipped\\u003f.svg", "picosvg\\clipped\\u0040.svg", "picosvg\\clipped\\u0041.svg", "picosvg\\clipped\\u0042.svg", "picosvg\\clipped\\u0043.svg", "picosvg\\clipped\\u0044.svg", "picosvg\\clipped\\u0045.svg", "picosvg\\clipped\\u0046.svg", "picosvg\\clipped\\u0047.svg", "picosvg\\clipped\\u0048.svg", "picosvg\\clipped\\u0049.svg", "picosvg\\clipped\\u004a.svg", "picosvg\\clipped\\u004b.svg", "picosvg\\clipped\\u004c.svg", "picosvg\\clipped\\u004d.svg", "picosvg\\clipped\\u004e.svg", "picosvg\\clipped\\u004f.svg", "picosvg\\clipped\\u0050.svg", "picosvg\\clipped\\u0051.svg", "picosvg\\clipped\\u0052.svg", "picosvg\\clipped\\u0053.svg", "picosvg\\clipped\\u0054.svg", "picosvg\\clipped\\u0055.svg", "picosvg\\clipped\\u0056.svg", "picosvg\\clipped\\u0057.svg", "picosvg\\clipped\\u0058.svg", "picosvg\\clipped\\u0059.svg", "picosvg\\clipped\\u005a.svg", "picosvg\\clipped\\u005e.svg", "picosvg\\clipped\\u005f.svg", "picosvg\\clipped\\u0061.svg", "picosvg\\clipped\\u0062.svg", "picosvg\\clipped\\u0063.svg", "picosvg\\clipped\\u0064.svg", "picosvg\\clipped\\u0065.svg", "picosvg\\clipped\\u0066.svg", "picosvg\\clipped\\u0067.svg", "picosvg\\clipped\\u0068.svg", "picosvg\\clipped\\u0069.svg", "picosvg\\clipped\\u006a.svg", "picosvg\\clipped\\u006b.svg", "picosvg\\clipped\\u006c.svg", "picosvg\\clipped\\u006d.svg", "picosvg\\clipped\\u006e.svg", "picosvg\\clipped\\u006f.svg", "picosvg\\clipped\\u0070.svg", "picosvg\\clipped\\u0071.svg", "picosvg\\clipped\\u0072.svg", "picosvg\\clipped\\u0073.svg", "picosvg\\clipped\\u0074.svg", "picosvg\\clipped\\u0075.svg", "picosvg\\clipped\\u0076.svg", "picosvg\\clipped\\u0077.svg", "picosvg\\clipped\\u0078.svg", "picosvg\\clipped\\u0079.svg", "picosvg\\clipped\\u007a.svg",]
+
+[master.regular.position]
+wght = 400

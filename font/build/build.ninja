@@ -53,24 +53,522 @@ rule nanoemoji.write_glyphmap
   rspfile = $out.rsp
   rspfile_content = $in
 
-build FruitSalad.fea: write_fea FruitSalad.glyphmap
+build fruit-salad.fea: write_fea fruit-salad.glyphmap
 
-build FruitSalad.glyphmap: nanoemoji.write_glyphmap picosvg\clipped\u004e.svg
+build fruit-salad.glyphmap: nanoemoji.write_glyphmap $
+    picosvg\clipped\u0021.svg picosvg\clipped\u0022.svg $
+    picosvg\clipped\u0023.svg picosvg\clipped\u0024.svg $
+    picosvg\clipped\u0026.svg picosvg\clipped\u0027.svg $
+    picosvg\clipped\u0028.svg picosvg\clipped\u0029.svg $
+    picosvg\clipped\u002a.svg picosvg\clipped\u002b.svg $
+    picosvg\clipped\u002c.svg picosvg\clipped\u002d.svg $
+    picosvg\clipped\u002e.svg picosvg\clipped\u0030.svg $
+    picosvg\clipped\u0031.svg picosvg\clipped\u0032.svg $
+    picosvg\clipped\u0033.svg picosvg\clipped\u0034.svg $
+    picosvg\clipped\u0035.svg picosvg\clipped\u0036.svg $
+    picosvg\clipped\u0037.svg picosvg\clipped\u0038.svg $
+    picosvg\clipped\u0039.svg picosvg\clipped\u003a.svg $
+    picosvg\clipped\u003b.svg picosvg\clipped\u003c.svg $
+    picosvg\clipped\u003d.svg picosvg\clipped\u003e.svg $
+    picosvg\clipped\u003f.svg picosvg\clipped\u0040.svg $
+    picosvg\clipped\u0041.svg picosvg\clipped\u0042.svg $
+    picosvg\clipped\u0043.svg picosvg\clipped\u0044.svg $
+    picosvg\clipped\u0045.svg picosvg\clipped\u0046.svg $
+    picosvg\clipped\u0047.svg picosvg\clipped\u0048.svg $
+    picosvg\clipped\u0049.svg picosvg\clipped\u004a.svg $
+    picosvg\clipped\u004b.svg picosvg\clipped\u004c.svg $
+    picosvg\clipped\u004d.svg picosvg\clipped\u004e.svg $
+    picosvg\clipped\u004f.svg picosvg\clipped\u0050.svg $
+    picosvg\clipped\u0051.svg picosvg\clipped\u0052.svg $
+    picosvg\clipped\u0053.svg picosvg\clipped\u0054.svg $
+    picosvg\clipped\u0055.svg picosvg\clipped\u0056.svg $
+    picosvg\clipped\u0057.svg picosvg\clipped\u0058.svg $
+    picosvg\clipped\u0059.svg picosvg\clipped\u005a.svg $
+    picosvg\clipped\u005e.svg picosvg\clipped\u005f.svg $
+    picosvg\clipped\u0061.svg picosvg\clipped\u0062.svg $
+    picosvg\clipped\u0063.svg picosvg\clipped\u0064.svg $
+    picosvg\clipped\u0065.svg picosvg\clipped\u0066.svg $
+    picosvg\clipped\u0067.svg picosvg\clipped\u0068.svg $
+    picosvg\clipped\u0069.svg picosvg\clipped\u006a.svg $
+    picosvg\clipped\u006b.svg picosvg\clipped\u006c.svg $
+    picosvg\clipped\u006d.svg picosvg\clipped\u006e.svg $
+    picosvg\clipped\u006f.svg picosvg\clipped\u0070.svg $
+    picosvg\clipped\u0071.svg picosvg\clipped\u0072.svg $
+    picosvg\clipped\u0073.svg picosvg\clipped\u0074.svg $
+    picosvg\clipped\u0075.svg picosvg\clipped\u0076.svg $
+    picosvg\clipped\u0077.svg picosvg\clipped\u0078.svg $
+    picosvg\clipped\u0079.svg picosvg\clipped\u007a.svg
 
+build picosvg\clipped\u0021.svg: picosvg_clipped ..\src\u0021.svg
+build picosvg\clipped\u0021.parts.json: write_part_file $
+    picosvg\clipped\u0021.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0022.svg: picosvg_clipped ..\src\u0022.svg
+build picosvg\clipped\u0022.parts.json: write_part_file $
+    picosvg\clipped\u0022.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0023.svg: picosvg_clipped ..\src\u0023.svg
+build picosvg\clipped\u0023.parts.json: write_part_file $
+    picosvg\clipped\u0023.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0024.svg: picosvg_clipped ..\src\u0024.svg
+build picosvg\clipped\u0024.parts.json: write_part_file $
+    picosvg\clipped\u0024.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0026.svg: picosvg_clipped ..\src\u0026.svg
+build picosvg\clipped\u0026.parts.json: write_part_file $
+    picosvg\clipped\u0026.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0027.svg: picosvg_clipped ..\src\u0027.svg
+build picosvg\clipped\u0027.parts.json: write_part_file $
+    picosvg\clipped\u0027.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0028.svg: picosvg_clipped ..\src\u0028.svg
+build picosvg\clipped\u0028.parts.json: write_part_file $
+    picosvg\clipped\u0028.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0029.svg: picosvg_clipped ..\src\u0029.svg
+build picosvg\clipped\u0029.parts.json: write_part_file $
+    picosvg\clipped\u0029.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u002a.svg: picosvg_clipped ..\src\u002a.svg
+build picosvg\clipped\u002a.parts.json: write_part_file $
+    picosvg\clipped\u002a.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u002b.svg: picosvg_clipped ..\src\u002b.svg
+build picosvg\clipped\u002b.parts.json: write_part_file $
+    picosvg\clipped\u002b.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u002c.svg: picosvg_clipped ..\src\u002c.svg
+build picosvg\clipped\u002c.parts.json: write_part_file $
+    picosvg\clipped\u002c.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u002d.svg: picosvg_clipped ..\src\u002d.svg
+build picosvg\clipped\u002d.parts.json: write_part_file $
+    picosvg\clipped\u002d.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u002e.svg: picosvg_clipped ..\src\u002e.svg
+build picosvg\clipped\u002e.parts.json: write_part_file $
+    picosvg\clipped\u002e.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0030.svg: picosvg_clipped ..\src\u0030.svg
+build picosvg\clipped\u0030.parts.json: write_part_file $
+    picosvg\clipped\u0030.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0031.svg: picosvg_clipped ..\src\u0031.svg
+build picosvg\clipped\u0031.parts.json: write_part_file $
+    picosvg\clipped\u0031.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0032.svg: picosvg_clipped ..\src\u0032.svg
+build picosvg\clipped\u0032.parts.json: write_part_file $
+    picosvg\clipped\u0032.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0033.svg: picosvg_clipped ..\src\u0033.svg
+build picosvg\clipped\u0033.parts.json: write_part_file $
+    picosvg\clipped\u0033.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0034.svg: picosvg_clipped ..\src\u0034.svg
+build picosvg\clipped\u0034.parts.json: write_part_file $
+    picosvg\clipped\u0034.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0035.svg: picosvg_clipped ..\src\u0035.svg
+build picosvg\clipped\u0035.parts.json: write_part_file $
+    picosvg\clipped\u0035.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0036.svg: picosvg_clipped ..\src\u0036.svg
+build picosvg\clipped\u0036.parts.json: write_part_file $
+    picosvg\clipped\u0036.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0037.svg: picosvg_clipped ..\src\u0037.svg
+build picosvg\clipped\u0037.parts.json: write_part_file $
+    picosvg\clipped\u0037.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0038.svg: picosvg_clipped ..\src\u0038.svg
+build picosvg\clipped\u0038.parts.json: write_part_file $
+    picosvg\clipped\u0038.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0039.svg: picosvg_clipped ..\src\u0039.svg
+build picosvg\clipped\u0039.parts.json: write_part_file $
+    picosvg\clipped\u0039.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u003a.svg: picosvg_clipped ..\src\u003a.svg
+build picosvg\clipped\u003a.parts.json: write_part_file $
+    picosvg\clipped\u003a.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u003b.svg: picosvg_clipped ..\src\u003b.svg
+build picosvg\clipped\u003b.parts.json: write_part_file $
+    picosvg\clipped\u003b.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u003c.svg: picosvg_clipped ..\src\u003c.svg
+build picosvg\clipped\u003c.parts.json: write_part_file $
+    picosvg\clipped\u003c.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u003d.svg: picosvg_clipped ..\src\u003d.svg
+build picosvg\clipped\u003d.parts.json: write_part_file $
+    picosvg\clipped\u003d.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u003e.svg: picosvg_clipped ..\src\u003e.svg
+build picosvg\clipped\u003e.parts.json: write_part_file $
+    picosvg\clipped\u003e.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u003f.svg: picosvg_clipped ..\src\u003f.svg
+build picosvg\clipped\u003f.parts.json: write_part_file $
+    picosvg\clipped\u003f.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0040.svg: picosvg_clipped ..\src\u0040.svg
+build picosvg\clipped\u0040.parts.json: write_part_file $
+    picosvg\clipped\u0040.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0041.svg: picosvg_clipped ..\src\u0041.svg
+build picosvg\clipped\u0041.parts.json: write_part_file $
+    picosvg\clipped\u0041.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0042.svg: picosvg_clipped ..\src\u0042.svg
+build picosvg\clipped\u0042.parts.json: write_part_file $
+    picosvg\clipped\u0042.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0043.svg: picosvg_clipped ..\src\u0043.svg
+build picosvg\clipped\u0043.parts.json: write_part_file $
+    picosvg\clipped\u0043.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0044.svg: picosvg_clipped ..\src\u0044.svg
+build picosvg\clipped\u0044.parts.json: write_part_file $
+    picosvg\clipped\u0044.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0045.svg: picosvg_clipped ..\src\u0045.svg
+build picosvg\clipped\u0045.parts.json: write_part_file $
+    picosvg\clipped\u0045.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0046.svg: picosvg_clipped ..\src\u0046.svg
+build picosvg\clipped\u0046.parts.json: write_part_file $
+    picosvg\clipped\u0046.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0047.svg: picosvg_clipped ..\src\u0047.svg
+build picosvg\clipped\u0047.parts.json: write_part_file $
+    picosvg\clipped\u0047.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0048.svg: picosvg_clipped ..\src\u0048.svg
+build picosvg\clipped\u0048.parts.json: write_part_file $
+    picosvg\clipped\u0048.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0049.svg: picosvg_clipped ..\src\u0049.svg
+build picosvg\clipped\u0049.parts.json: write_part_file $
+    picosvg\clipped\u0049.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u004a.svg: picosvg_clipped ..\src\u004a.svg
+build picosvg\clipped\u004a.parts.json: write_part_file $
+    picosvg\clipped\u004a.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u004b.svg: picosvg_clipped ..\src\u004b.svg
+build picosvg\clipped\u004b.parts.json: write_part_file $
+    picosvg\clipped\u004b.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u004c.svg: picosvg_clipped ..\src\u004c.svg
+build picosvg\clipped\u004c.parts.json: write_part_file $
+    picosvg\clipped\u004c.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u004d.svg: picosvg_clipped ..\src\u004d.svg
+build picosvg\clipped\u004d.parts.json: write_part_file $
+    picosvg\clipped\u004d.svg
+  reuse_tolerance = 0.1
+  wh = 1200
 build picosvg\clipped\u004e.svg: picosvg_clipped ..\src\u004e.svg
 build picosvg\clipped\u004e.parts.json: write_part_file $
     picosvg\clipped\u004e.svg
   reuse_tolerance = 0.1
   wh = 1200
+build picosvg\clipped\u004f.svg: picosvg_clipped ..\src\u004f.svg
+build picosvg\clipped\u004f.parts.json: write_part_file $
+    picosvg\clipped\u004f.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0050.svg: picosvg_clipped ..\src\u0050.svg
+build picosvg\clipped\u0050.parts.json: write_part_file $
+    picosvg\clipped\u0050.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0051.svg: picosvg_clipped ..\src\u0051.svg
+build picosvg\clipped\u0051.parts.json: write_part_file $
+    picosvg\clipped\u0051.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0052.svg: picosvg_clipped ..\src\u0052.svg
+build picosvg\clipped\u0052.parts.json: write_part_file $
+    picosvg\clipped\u0052.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0053.svg: picosvg_clipped ..\src\u0053.svg
+build picosvg\clipped\u0053.parts.json: write_part_file $
+    picosvg\clipped\u0053.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0054.svg: picosvg_clipped ..\src\u0054.svg
+build picosvg\clipped\u0054.parts.json: write_part_file $
+    picosvg\clipped\u0054.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0055.svg: picosvg_clipped ..\src\u0055.svg
+build picosvg\clipped\u0055.parts.json: write_part_file $
+    picosvg\clipped\u0055.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0056.svg: picosvg_clipped ..\src\u0056.svg
+build picosvg\clipped\u0056.parts.json: write_part_file $
+    picosvg\clipped\u0056.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0057.svg: picosvg_clipped ..\src\u0057.svg
+build picosvg\clipped\u0057.parts.json: write_part_file $
+    picosvg\clipped\u0057.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0058.svg: picosvg_clipped ..\src\u0058.svg
+build picosvg\clipped\u0058.parts.json: write_part_file $
+    picosvg\clipped\u0058.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0059.svg: picosvg_clipped ..\src\u0059.svg
+build picosvg\clipped\u0059.parts.json: write_part_file $
+    picosvg\clipped\u0059.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u005a.svg: picosvg_clipped ..\src\u005a.svg
+build picosvg\clipped\u005a.parts.json: write_part_file $
+    picosvg\clipped\u005a.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u005e.svg: picosvg_clipped ..\src\u005e.svg
+build picosvg\clipped\u005e.parts.json: write_part_file $
+    picosvg\clipped\u005e.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u005f.svg: picosvg_clipped ..\src\u005f.svg
+build picosvg\clipped\u005f.parts.json: write_part_file $
+    picosvg\clipped\u005f.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0061.svg: picosvg_clipped ..\src\u0061.svg
+build picosvg\clipped\u0061.parts.json: write_part_file $
+    picosvg\clipped\u0061.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0062.svg: picosvg_clipped ..\src\u0062.svg
+build picosvg\clipped\u0062.parts.json: write_part_file $
+    picosvg\clipped\u0062.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0063.svg: picosvg_clipped ..\src\u0063.svg
+build picosvg\clipped\u0063.parts.json: write_part_file $
+    picosvg\clipped\u0063.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0064.svg: picosvg_clipped ..\src\u0064.svg
+build picosvg\clipped\u0064.parts.json: write_part_file $
+    picosvg\clipped\u0064.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0065.svg: picosvg_clipped ..\src\u0065.svg
+build picosvg\clipped\u0065.parts.json: write_part_file $
+    picosvg\clipped\u0065.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0066.svg: picosvg_clipped ..\src\u0066.svg
+build picosvg\clipped\u0066.parts.json: write_part_file $
+    picosvg\clipped\u0066.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0067.svg: picosvg_clipped ..\src\u0067.svg
+build picosvg\clipped\u0067.parts.json: write_part_file $
+    picosvg\clipped\u0067.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0068.svg: picosvg_clipped ..\src\u0068.svg
+build picosvg\clipped\u0068.parts.json: write_part_file $
+    picosvg\clipped\u0068.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0069.svg: picosvg_clipped ..\src\u0069.svg
+build picosvg\clipped\u0069.parts.json: write_part_file $
+    picosvg\clipped\u0069.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u006a.svg: picosvg_clipped ..\src\u006a.svg
+build picosvg\clipped\u006a.parts.json: write_part_file $
+    picosvg\clipped\u006a.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u006b.svg: picosvg_clipped ..\src\u006b.svg
+build picosvg\clipped\u006b.parts.json: write_part_file $
+    picosvg\clipped\u006b.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u006c.svg: picosvg_clipped ..\src\u006c.svg
+build picosvg\clipped\u006c.parts.json: write_part_file $
+    picosvg\clipped\u006c.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u006d.svg: picosvg_clipped ..\src\u006d.svg
+build picosvg\clipped\u006d.parts.json: write_part_file $
+    picosvg\clipped\u006d.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u006e.svg: picosvg_clipped ..\src\u006e.svg
+build picosvg\clipped\u006e.parts.json: write_part_file $
+    picosvg\clipped\u006e.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u006f.svg: picosvg_clipped ..\src\u006f.svg
+build picosvg\clipped\u006f.parts.json: write_part_file $
+    picosvg\clipped\u006f.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0070.svg: picosvg_clipped ..\src\u0070.svg
+build picosvg\clipped\u0070.parts.json: write_part_file $
+    picosvg\clipped\u0070.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0071.svg: picosvg_clipped ..\src\u0071.svg
+build picosvg\clipped\u0071.parts.json: write_part_file $
+    picosvg\clipped\u0071.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0072.svg: picosvg_clipped ..\src\u0072.svg
+build picosvg\clipped\u0072.parts.json: write_part_file $
+    picosvg\clipped\u0072.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0073.svg: picosvg_clipped ..\src\u0073.svg
+build picosvg\clipped\u0073.parts.json: write_part_file $
+    picosvg\clipped\u0073.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0074.svg: picosvg_clipped ..\src\u0074.svg
+build picosvg\clipped\u0074.parts.json: write_part_file $
+    picosvg\clipped\u0074.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0075.svg: picosvg_clipped ..\src\u0075.svg
+build picosvg\clipped\u0075.parts.json: write_part_file $
+    picosvg\clipped\u0075.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0076.svg: picosvg_clipped ..\src\u0076.svg
+build picosvg\clipped\u0076.parts.json: write_part_file $
+    picosvg\clipped\u0076.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0077.svg: picosvg_clipped ..\src\u0077.svg
+build picosvg\clipped\u0077.parts.json: write_part_file $
+    picosvg\clipped\u0077.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0078.svg: picosvg_clipped ..\src\u0078.svg
+build picosvg\clipped\u0078.parts.json: write_part_file $
+    picosvg\clipped\u0078.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u0079.svg: picosvg_clipped ..\src\u0079.svg
+build picosvg\clipped\u0079.parts.json: write_part_file $
+    picosvg\clipped\u0079.svg
+  reuse_tolerance = 0.1
+  wh = 1200
+build picosvg\clipped\u007a.svg: picosvg_clipped ..\src\u007a.svg
+build picosvg\clipped\u007a.parts.json: write_part_file $
+    picosvg\clipped\u007a.svg
+  reuse_tolerance = 0.1
+  wh = 1200
 
 build parts-merged.json: write_combined_part_files $
-    picosvg\clipped\u004e.parts.json
+    picosvg\clipped\u0021.parts.json picosvg\clipped\u0022.parts.json $
+    picosvg\clipped\u0023.parts.json picosvg\clipped\u0024.parts.json $
+    picosvg\clipped\u0026.parts.json picosvg\clipped\u0027.parts.json $
+    picosvg\clipped\u0028.parts.json picosvg\clipped\u0029.parts.json $
+    picosvg\clipped\u002a.parts.json picosvg\clipped\u002b.parts.json $
+    picosvg\clipped\u002c.parts.json picosvg\clipped\u002d.parts.json $
+    picosvg\clipped\u002e.parts.json picosvg\clipped\u0030.parts.json $
+    picosvg\clipped\u0031.parts.json picosvg\clipped\u0032.parts.json $
+    picosvg\clipped\u0033.parts.json picosvg\clipped\u0034.parts.json $
+    picosvg\clipped\u0035.parts.json picosvg\clipped\u0036.parts.json $
+    picosvg\clipped\u0037.parts.json picosvg\clipped\u0038.parts.json $
+    picosvg\clipped\u0039.parts.json picosvg\clipped\u003a.parts.json $
+    picosvg\clipped\u003b.parts.json picosvg\clipped\u003c.parts.json $
+    picosvg\clipped\u003d.parts.json picosvg\clipped\u003e.parts.json $
+    picosvg\clipped\u003f.parts.json picosvg\clipped\u0040.parts.json $
+    picosvg\clipped\u0041.parts.json picosvg\clipped\u0042.parts.json $
+    picosvg\clipped\u0043.parts.json picosvg\clipped\u0044.parts.json $
+    picosvg\clipped\u0045.parts.json picosvg\clipped\u0046.parts.json $
+    picosvg\clipped\u0047.parts.json picosvg\clipped\u0048.parts.json $
+    picosvg\clipped\u0049.parts.json picosvg\clipped\u004a.parts.json $
+    picosvg\clipped\u004b.parts.json picosvg\clipped\u004c.parts.json $
+    picosvg\clipped\u004d.parts.json picosvg\clipped\u004e.parts.json $
+    picosvg\clipped\u004f.parts.json picosvg\clipped\u0050.parts.json $
+    picosvg\clipped\u0051.parts.json picosvg\clipped\u0052.parts.json $
+    picosvg\clipped\u0053.parts.json picosvg\clipped\u0054.parts.json $
+    picosvg\clipped\u0055.parts.json picosvg\clipped\u0056.parts.json $
+    picosvg\clipped\u0057.parts.json picosvg\clipped\u0058.parts.json $
+    picosvg\clipped\u0059.parts.json picosvg\clipped\u005a.parts.json $
+    picosvg\clipped\u005e.parts.json picosvg\clipped\u005f.parts.json $
+    picosvg\clipped\u0061.parts.json picosvg\clipped\u0062.parts.json $
+    picosvg\clipped\u0063.parts.json picosvg\clipped\u0064.parts.json $
+    picosvg\clipped\u0065.parts.json picosvg\clipped\u0066.parts.json $
+    picosvg\clipped\u0067.parts.json picosvg\clipped\u0068.parts.json $
+    picosvg\clipped\u0069.parts.json picosvg\clipped\u006a.parts.json $
+    picosvg\clipped\u006b.parts.json picosvg\clipped\u006c.parts.json $
+    picosvg\clipped\u006d.parts.json picosvg\clipped\u006e.parts.json $
+    picosvg\clipped\u006f.parts.json picosvg\clipped\u0070.parts.json $
+    picosvg\clipped\u0071.parts.json picosvg\clipped\u0072.parts.json $
+    picosvg\clipped\u0073.parts.json picosvg\clipped\u0074.parts.json $
+    picosvg\clipped\u0075.parts.json picosvg\clipped\u0076.parts.json $
+    picosvg\clipped\u0077.parts.json picosvg\clipped\u0078.parts.json $
+    picosvg\clipped\u0079.parts.json picosvg\clipped\u007a.parts.json
 
 
-build FruitSalad.ttf: write_font | FruitSalad.toml FruitSalad.fea $
-    FruitSalad.glyphmap parts-merged.json
-  config_file = FruitSalad.toml
-  fea_file = FruitSalad.fea
-  glyphmap_file = FruitSalad.glyphmap
+build fruit-salad.ttf: write_font | fruit-salad.toml fruit-salad.fea $
+    fruit-salad.glyphmap parts-merged.json
+  config_file = fruit-salad.toml
+  fea_file = fruit-salad.fea
+  glyphmap_file = fruit-salad.glyphmap
   part_file = parts-merged.json
 
