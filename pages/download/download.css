@@ -286,9 +286,64 @@ main {
     color: var(--dark-brown);
 }
 
+.cta-btns {
+    /* background-color: cornflowerblue; */
+    color: var(--dark-brown);
+}
 
+.cta-btns .btn {
+  --btn-width: 250px;
+  --btn-height: 80px;
+  
+  --btn-color: var(--dark-brown);
+  --btn-color-dark: var(--dark-brown);
+  --btn-text: var(--dark-brown);
+  --btn-text-hover: var(--white);
 
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--btn-width);
+  height: var(--btn-height);
+  max-width: 100%;
+  color: var(--btn-text);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  overflow: hidden;
+  z-index: 1;
+  box-sizing: border-box;
+  transition: color 0.4s ease-in-out, background-color 0.2s ease-in-out;
+}
 
+.cta-btns .btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: var(--btn-color-dark);
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.cta-btns .btn:hover {
+  color: var(--btn-text-hover);
+}
+
+.cta-btns .btn:hover span {
+  width: calc(var(--btn-width) * 2.25);
+  height: calc(var(--btn-width) * 2.25);
+}
+
+.cta-btns .btn:active {
+  background-color: var(--btn-color);
+}
 
 
 

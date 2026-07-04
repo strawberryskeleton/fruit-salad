@@ -34,3 +34,20 @@ menuItems.forEach(link => {
     })
 
 })
+
+
+document.querySelectorAll('.btn').forEach(button => {
+  const span = button.querySelector('span');
+
+  const updateCoordinates = (e) => {
+    const rect = button.getBoundingClientRect();
+    
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    span.style.left = `${x}px`;
+    span.style.top = `${y}px`;
+  };
+
+  button.addEventListener('mousemove', updateCoordinates);
+});
