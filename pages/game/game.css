@@ -1,3 +1,5 @@
+@import url('../theme.css');
+
 *,
 *::before,
 *::after {
@@ -23,7 +25,28 @@ header {
     width: 100%;
     height: 10vh;
     /* background-color: darkgreen; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: 28px;
+    font-family: var(--heading-font);
     z-index: 100;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.score-div {
+    margin-top: 2rem;
+    margin-right: 5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 10px;
 }
 
 main {
@@ -44,14 +67,14 @@ main {
     background: url('../../assets/shelf_edit.png');
 }
 
-.danger-line {
+/* .danger-line {
     width: 100%;
     height: 32px;
     position: absolute;
     bottom: 0;
     background-color: red;
     z-index: 50;
-}
+} */
 
 .bowl {
     width: 10rem;
@@ -71,9 +94,11 @@ main {
 }
 
 .fruit {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: gold;
+    /* background: url(../../font/src/png/A.png); */
+    background-size: contain;
     position: absolute;
     bottom: 500px;
     z-index: 10;

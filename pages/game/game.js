@@ -1,13 +1,43 @@
 
 const game = document.querySelector('main')
 const bowl = document.querySelector('.bowl')
-const dangerLine = document.querySelector('.danger-line')
+// const dangerLine = document.querySelector('.danger-line')
 const fruits = document.querySelector('.fruits')
+const scoreDisplay = document.querySelector('#score')
 
 let bowlLeft = parseInt(window.getComputedStyle(bowl).getPropertyValue('left'))
 let bowlBottom = parseInt(window.getComputedStyle(bowl).getPropertyValue("bottom"))
 
 let score = 0
+
+const fruitImg = [
+    '../../font/src/png/A.png',
+    '../../font/src/png/B.png',
+    '../../font/src/png/C.png',
+    '../../font/src/png/D.png',
+    '../../font/src/png/E.png',
+    '../../font/src/png/F.png',
+    '../../font/src/png/G.png',
+    '../../font/src/png/H.png',
+    '../../font/src/png/I.png',
+    '../../font/src/png/J.png',
+    '../../font/src/png/K.png',
+    '../../font/src/png/L.png',
+    '../../font/src/png/M.png',
+    '../../font/src/png/N.png',
+    '../../font/src/png/O.png',
+    '../../font/src/png/P.png',
+    '../../font/src/png/Q.png',
+    '../../font/src/png/R.png',
+    '../../font/src/png/S.png',
+    '../../font/src/png/T.png',
+    '../../font/src/png/U.png',
+    '../../font/src/png/V.png',
+    '../../font/src/png/W.png',
+    '../../font/src/png/X.png',
+    '../../font/src/png/Y.png',
+    '../../font/src/png/Z.png',
+]
 
 
 function moveBowlLeft () {
@@ -45,6 +75,10 @@ function generateFruits () {
     let fruit = document.createElement('div')
     fruit.classList.add('fruit')
 
+    fruit.style.background = `url(${fruitImg[Math.floor(Math.random() * 25)]})`
+    fruit.style.backgroundSize = 'contain'
+    fruit.style.backgroundRepeat = 'no-repeat'
+
     let fruitBottom = 530
     let fruitLeft = Math.floor(Math.random() * (document.documentElement.clientWidth * 0.88))
 
@@ -59,6 +93,7 @@ function generateFruits () {
             fruits.removeChild(fruit)
             clearInterval(fruitInterval)
             score++
+            scoreDisplay.textContent = String(score).padStart(2, '0');
         }
 
         if (fruitBottom < bowlBottom) {
@@ -83,8 +118,4 @@ generateFruits()
 function gameOver () {
     alert(`game over! score = ${score}`)
     location.reload()
-}
-
-function addScore () {
-    alert('score ++')
 }
