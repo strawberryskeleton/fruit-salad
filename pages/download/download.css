@@ -13,6 +13,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     background-color: var(--light-brown);
+    background: url('../../assets/bg2.jpeg');
     font-family: var(--text-font);
     display: flex;
     flex-direction: column;
@@ -254,8 +255,8 @@ nav {
 
 
 /* ============================
-==========MAIN================
-================================= */
+=============MAIN==============
+=============================== */
 main {
     width: 100%;
     /* background-color: blueviolet; */
@@ -276,6 +277,7 @@ main {
     font-size: 48px;
     text-transform: uppercase;
     font-family: var(--fruit-font);
+    letter-spacing: -5px;
 }
 
 .title-explain {
@@ -296,7 +298,6 @@ main {
   --btn-height: 80px;
   
   --btn-color: var(--dark-brown);
-  --btn-color-dark: var(--dark-brown);
   --btn-text: var(--dark-brown);
   --btn-text-hover: var(--white);
 
@@ -325,7 +326,7 @@ main {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: var(--btn-color-dark);
+  background-color: var(--btn-color);
   z-index: -1;
   transform: translate(-50%, -50%);
   pointer-events: none;
