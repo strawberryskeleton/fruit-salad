@@ -5,6 +5,8 @@ const bowl = document.querySelector('.bowl')
 const fruits = document.querySelector('.fruits')
 const scoreDisplay = document.querySelector('#score')
 const highScoreDisplay = document.querySelector('#high-score')
+const startScreen = document.querySelector('#start-screen')
+const endScreen = document.querySelector('#end-screen')
 
 let bowlLeft = parseInt(window.getComputedStyle(bowl).getPropertyValue('left'))
 let bowlBottom = parseInt(window.getComputedStyle(bowl).getPropertyValue("bottom"))
@@ -12,6 +14,8 @@ let bowlBottom = parseInt(window.getComputedStyle(bowl).getPropertyValue("bottom
 let score = 0
 let highScore = localStorage.getItem('CatchGameHighScore') || 0
 highScoreDisplay.textContent = String(highScore).padStart(2, '0')
+
+let isGameActive = false
 
 const fruitImg = [
     '../../font/src/png/A.png',
@@ -71,14 +75,17 @@ function controlBowl (e) {
     }
 }
 
-document.addEventListener('keydown', controlBowl)
+// document.addEventListener('keydown', controlBowl)
 
 
 function generateFruits () {
+
+    if(!isGameActive) return
+
     let fruit = document.createElement('div')
     fruit.classList.add('fruit')
 
-    fruit.style.background = `url(${fruitImg[Math.floor(Math.random() * 25)]})`
+    fruit.style.background = `url(${fruitImg[Math.floor(Math.random() * fruitImg.length)]})`
     fruit.style.backgroundSize = 'contain'
     fruit.style.backgroundRepeat = 'no-repeat'
 
@@ -91,6 +98,12 @@ function generateFruits () {
     // fruit.style.left = `${fruitLeft}px`
 
     function fallingFruit () {
+
+        if (!isGameActive) {
+            clearInterval(fruitInterval)
+            if (fruit.parentNode) fruits.removeChild(fruit)
+            return
+        }
 
         if (fruitBottom < bowlBottom + 50 && fruitBottom > bowlBottom && fruitLeft > bowlLeft - 10 && fruitLeft < bowlLeft + 100) {
             fruits.removeChild(fruit)
@@ -106,10 +119,11 @@ function generateFruits () {
         }
 
         if (fruitBottom < bowlBottom) {
-            gameOver()
             clearInterval(fruitInterval)
             clearTimeout(fruitTimeout)
-
+            fruits.removeChild(fruit)
+            gameOver()
+            return
         }
 
         fruitBottom -= 5
@@ -122,9 +136,25 @@ function generateFruits () {
     let fruitTimeout = setTimeout(generateFruits, 3000)
 }
 
-generateFruits()
+// generateFruits()
+
+function startGame () {
+    score = 0
+    scoreDisplay.textContent = '00'
+    
+    isGameActive = true
+
+    startScreen.classList.add('hidden')
+    endScreen.classList.add('hidden')
+    document.addEventListener('keydown', controlBowl)
+    generateFruits()
+}
 
 function gameOver () {
-    alert(`game over! score = ${score}`)
-    location.reload()
+    // alert(`game over! score = ${score}`)
+    // location.reload()
+    isGameActive = false
+    
+    endScreen.classList.remove('hidden')
+    document.removeEventListener('keydown', controlBowl)
 }

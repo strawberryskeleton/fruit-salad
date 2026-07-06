@@ -47,7 +47,7 @@ header {
     font-weight: 600;
     letter-spacing: 2px;
     word-spacing: 10px;
-    
+    color: var(--text-color);
 }
 
 main {
@@ -55,6 +55,9 @@ main {
     height: 90vh;
     position: relative;
     /* background-color: darkkhaki; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .shelf {
@@ -103,4 +106,56 @@ main {
     position: absolute;
     bottom: 500px;
     z-index: 10;
+}
+
+
+#start-screen,
+#end-screen {
+    /* width: fit-content; */
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 100; */
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5;
+    /* color: var(--dark-brown); */
+}
+
+#start-screen h1,
+#end-screen h1 {
+    font-family: var(--fruit-font);
+    /* color: var(--dark-brown); */
+}
+
+#start-screen h2,
+#end-screen h2 {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+#start-screen p,
+#end-screen p {
+    font-family: var(--text-font);
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+#start-screen button,
+#end-screen button {
+    font-family: var(--text-font);
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 20px;
+    border: none;
+    background-color: var(--dark-brown);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
 }
