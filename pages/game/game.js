@@ -4,11 +4,14 @@ const bowl = document.querySelector('.bowl')
 // const dangerLine = document.querySelector('.danger-line')
 const fruits = document.querySelector('.fruits')
 const scoreDisplay = document.querySelector('#score')
+const highScoreDisplay = document.querySelector('#high-score')
 
 let bowlLeft = parseInt(window.getComputedStyle(bowl).getPropertyValue('left'))
 let bowlBottom = parseInt(window.getComputedStyle(bowl).getPropertyValue("bottom"))
 
 let score = 0
+let highScore = localStorage.getItem('CatchGameHighScore') || 0
+highScoreDisplay.textContent = String(highScore).padStart(2, '0')
 
 const fruitImg = [
     '../../font/src/png/A.png',
@@ -94,6 +97,12 @@ function generateFruits () {
             clearInterval(fruitInterval)
             score++
             scoreDisplay.textContent = String(score).padStart(2, '0');
+
+            if (score > highScore) {
+                highScore = score
+                localStorage.setItem('CatchGameHighScore', highScore)
+                highScoreDisplay.textContent = highScore
+            }
         }
 
         if (fruitBottom < bowlBottom) {
