@@ -6,6 +6,9 @@ fruit-salad is a encyrpted font where the starting letter of each fruit represen
 
 > fruit-salad.ttf is a color-glyph svg font in COLR2-svg format. This format isn't that commonly supported yet, but I think it should be ok for most people (no guarantees).
 
+**The Quick Brown Fox Jumps Over The Lazy Dog**
+![the quick brown fox jumps over the lazy dog](./screenshots/font_test.png)
+
 
 ## Making of fruit-salad Font
 1. got the idea while eating fruits (mango, yum!!) and thinking about project idea
