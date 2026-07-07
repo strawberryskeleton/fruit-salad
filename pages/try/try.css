@@ -13,6 +13,7 @@ body {
     height: 100vh;
     overflow-x: hidden;
     background-color: var(--light-brown);
+    background: url('../../assets/bg2.jpeg');
     font-family: var(--text-font);
     display: flex;
     flex-direction: column;
@@ -272,7 +273,7 @@ main {
     height: 90%;
     margin: 0 auto;
     /* background-color: var(--translucent-black); */
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     display: flex;
     border-radius: 12px;
     overflow: hidden;
@@ -280,7 +281,8 @@ main {
 
 .fruit-input-div {
     width: 50%;
-    background-color: darkmagenta;
+    background-color: var(--translucent-black);
+    backdrop-filter: blur(4px);
     padding: 1rem;
 }
 
@@ -292,12 +294,19 @@ main {
     font-family: var(--fruit-font);
     font-size: 24px;
     color: var(--white);
+    resize: none;
 }
 
 .eng-output-div {
     width: 50%;
-    background-color: darkslateblue;
+    background-color: var(--translucent-black);
+    backdrop-filter: blur(4px);
+    color: var(--dark-brown);
     padding: 1rem;
+    border-left: 2px solid var(--dark-brown);
+    /* text-wrap: wrap; */
+    overflow-wrap: break-word;
+    letter-spacing: 1px;
 }
 
 #eng-output {
@@ -307,7 +316,7 @@ main {
     background: transparent;
     font-family: var(--heading-font);
     font-size: 24px;
-    color: var(--white);
+    /* color: var(--white); */
 }
 
 
