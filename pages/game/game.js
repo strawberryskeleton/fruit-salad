@@ -64,12 +64,12 @@ function moveBowlRight () {
 }
 
 function controlBowl (e) {
-    if (e.key == 'ArrowLeft') {
+    if (e.key == 'ArrowLeft' || e.key == 'a') {
         moveBowlLeft()
         // console.log(e.key)
     }
 
-    if (e.key == 'ArrowRight') {
+    if (e.key == 'ArrowRight' || e.key == 'd') {
         moveBowlRight()
         // console.log(e.key)
     }
