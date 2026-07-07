@@ -43,7 +43,7 @@ header {
 
 .score-div {
     margin-top: 2rem;
-    margin-right: 5rem;
+    margin-right: 3rem;
     font-weight: 600;
     letter-spacing: 2px;
     word-spacing: 10px;
@@ -69,6 +69,25 @@ main {
     z-index: 10;
     /* background-color: brown; */
     background: url('../../assets/shelf_edit.png');
+}
+
+.shelf button {
+    font-family: var(--text-font);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 14px;
+    border: none;
+    background-color: var(--dark-brown);
+    color: var(--white);
+    border-radius: 8px;
+    margin-left: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.shelf button:hover {
+    color: var(--light-brown);
 }
 
 /* .danger-line {
@@ -154,6 +173,12 @@ main {
     background-color: var(--dark-brown);
     color: var(--white);
     border-radius: 8px;
+    transition: color 0.2s ease-in-out;
+}
+
+#start-screen button:hover,
+#end-screen button:hover {
+    color: var(--light-brown);
 }
 
 .hidden {
