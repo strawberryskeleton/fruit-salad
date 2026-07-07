@@ -59,6 +59,13 @@ header {
     animation: float 5s infinite linear;
 }
 
+.word1,
+.word2 {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
 /* .letter {
     animation: float 1s infinite linear;
 } */
