@@ -271,6 +271,7 @@ main {
 .title-div {
     /* background-color: cornflowerblue; */
     text-align: center;
+    line-height: 1.5;
 }
 
 .title {
@@ -286,11 +287,18 @@ main {
     font-family: var(--heading-font);
     font-weight: 600;
     color: var(--dark-brown);
+    /* margin-top: 1rem; */
 }
 
 .cta-btns {
-    /* background-color: cornflowerblue; */
+    /* background-color: red; */
     color: var(--dark-brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 5rem;
+    margin-bottom: 4.5rem;
 }
 
 .cta-btns .btn {
@@ -299,7 +307,7 @@ main {
   
   --btn-color: var(--dark-brown);
   --btn-text: var(--dark-brown);
-  --btn-text-hover: var(--white);
+  --btn-text-white: var(--white);
 
   position: relative;
   display: inline-flex;
@@ -308,10 +316,12 @@ main {
   width: var(--btn-width);
   height: var(--btn-height);
   max-width: 100%;
-  color: var(--btn-text);
+  background-color: var(--btn-color);
+  color: var(--btn-text-white);
   text-decoration: none;
   text-transform: uppercase;
-  border: 1px solid currentColor;
+  /* border: 1px solid currentColor; */
+  border-radius: 8px;
   overflow: hidden;
   z-index: 1;
   box-sizing: border-box;
@@ -326,7 +336,7 @@ main {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: var(--btn-color);
+  background-color: #d6edff;
   z-index: -1;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -346,6 +356,37 @@ main {
   background-color: var(--btn-color);
 }
 
+
+
+.info-div {
+    width: 85%;
+    margin: 0 auto;
+    padding: 3rem 4rem;
+    border-radius: 12px;
+    background-color: var(--dark-brown);
+    color: var(--white);
+    font-family: var(--text-font);
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.info-div .info:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.info-div .info h3 {
+    color: var(--light-brown);
+    margin-bottom: 0.5rem;
+}
+
+.info-div .info p {
+    line-height: 1.4;
+}
+
+.info-div .info span {
+    font-weight: 700;
+}
 
 
 /* ============================
