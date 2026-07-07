@@ -336,7 +336,11 @@ main {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #d6edff;
+  /* background-color: #d6edff; */
+  /* background-color: #0064ef; */
+  background-color: #0051bb;
+  /* background-color: var(--translucent-black); */
+  backdrop-filter: blur(4px);
   z-index: -1;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -344,7 +348,7 @@ main {
 }
 
 .cta-btns .btn:hover {
-  color: var(--btn-text-hover);
+  color: var(--btn-text-white);
 }
 
 .cta-btns .btn:hover span {
@@ -363,8 +367,9 @@ main {
     margin: 0 auto;
     padding: 3rem 4rem;
     border-radius: 12px;
-    background-color: var(--dark-brown);
-    color: var(--white);
+    background-color: var(--translucent-black);
+    backdrop-filter: blur(5px);
+    color: var(--text-color);
     font-family: var(--text-font);
     font-size: 17px;
     text-align: justify;
@@ -376,8 +381,9 @@ main {
 }
 
 .info-div .info h3 {
-    color: var(--light-brown);
+    color: var(--dark-brown);
     margin-bottom: 0.5rem;
+    font-size: 24px;
 }
 
 .info-div .info p {

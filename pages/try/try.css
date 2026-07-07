@@ -282,7 +282,7 @@ main {
 .fruit-input-div {
     width: 50%;
     background-color: var(--translucent-black);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     padding: 1rem;
 }
 
@@ -300,7 +300,7 @@ main {
 .eng-output-div {
     width: 50%;
     background-color: var(--translucent-black);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     color: var(--dark-brown);
     padding: 1rem;
     border-left: 2px solid var(--dark-brown);
