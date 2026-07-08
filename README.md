@@ -71,7 +71,8 @@ fruit-salad is a encyrpted font where the starting letter of each fruit represen
 - making the font: [Nanoemoji + Python](https://github.com/googlefonts/nanoemoji)
 - circle carousel for home page: [https://codepen.io/nicoleat3ve/pen/OJyBoMp](https://codepen.io/nicoleat3ve/pen/OJyBoMp)
 - hover button effect for download page: [https://codepen.io/kjbrum/pen/wBBLXx](https://codepen.io/kjbrum/pen/wBBLXx)
-
+- hamburger menu text hover animation: [https://youtu.be/8saYt5fc2Pc?si=HqLh1yMoFkaaAec7](https://youtu.be/8saYt5fc2Pc?si=HqLh1yMoFkaaAec7)
+- hamburger menu icon animation: [https://youtu.be/JLfBo4p9ANw?si=IyUc2FH2D3lYcGvq](https://youtu.be/JLfBo4p9ANw?si=IyUc2FH2D3lYcGvq)
 
 > AI USE
 > - helped in setting up + debugging for using nanoemoji and python for compiling the font
