@@ -1,6 +1,8 @@
 # Fruit Salad
 website to showcase my custom made fruit-salad font
 
+Live Demo UR: [https://strawberryskeleton.github.io/fruit-salad/](https://strawberryskeleton.github.io/fruit-salad/)
+
 ## About fruit-salad Font
 fruit-salad is a encyrpted font where the starting letter of each fruit represents the letter it is meant to replace (for example: Avocado for A/a). 
 
