@@ -65,6 +65,12 @@ fruit-salad is a encyrpted font where the starting letter of each fruit represen
 ![catch game](./screenshots/catch_game.png)
 
 
+## Local Development
+1. clone this github repo to your device
+2. run (by double clicking) `index.html` from the root/ directory
+   > all assets needed are included in the repo, and running the project locally does not need any further changes
+
+
 ## Credits
 - made by me
 - fruit-letter mapping help from my sister
